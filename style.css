@@ -1,22 +1,24 @@
 /* Google Fonts*/
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 *{
-    margin: 0;
-    padding: 0;
-    font-family: "Poppins", serif;
-    box-sizing: border-box;
-    scroll-behavior: smooth;
-    scroll-padding-top: 2rem;
-    list-style: none;
-    text-decoration: none;
+    /* Aplicar estilos generales a todos los elementos */
+    margin: 0;/* Eliminar márgenes predeterminados */
+    padding: 0;/* Eliminar padding predeterminado */
+    font-family: "Poppins", serif;/* Establecer la fuente principal */
+    box-sizing: border-box; /* Asegurar que el padding y border no afecten el tamaño total */
+    scroll-behavior: smooth;/* Habilitar desplazamiento suave */
+    scroll-padding-top: 2rem;/* Ajustar el padding superior en el desplazamiento */
+    list-style: none;/* Eliminar estilos de lista */
+    text-decoration: none;/* Eliminar decoraciones en enlaces */
 }
+/* Estilos para la selección de texto */
 *::selection{
     background:var(--main-color) ;
     color: #fff;
 }
 
 
-
+/* Definir variables CSS globales */
 :root {
 --main-color: #ffb411;
 --text-color: #1e1c2a;
@@ -29,64 +31,65 @@
 --p-font: 0.9rem;
 }
 section{
-    padding: 50px 10%;
+    padding: 50px 10%; /* Espaciado interno superior e inferior de 50px, laterales 10% */
 
 }
-body.active{
+body.active{  /* Modo oscuro: cambia colores cuando el cuerpo tiene la clase "active" */
     --text-color: #fff;
     --bg-color: #1e1c2a;
 
 }
-body{
+body{ /* Estilos generales del cuerpo */
     color: var(--text-color);
     background: var(--bg-color);
 }
 #darkmode{
-    font-size: 25px;
-    cursor: pointer;
+    font-size: 25px;/* Tamaño del icono */
+    cursor: pointer; /* Hacer que el icono sea interactivo */
 }
-header{
-    position: fixed;
-    width: 100%;
-    top: 0;
+header{ /* Encabezado fijo en la parte superior */
+    position: fixed; /* Fijar la posición en la parte superior */
+    width: 100%; /* Ocupar todo el ancho de la pantalla */
+    top: 0; /* Fijar en la parte superior */ 
     right: 0;
-    z-index: 1000;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    background: var(--bg-color);
-    padding: 18px 100px;
-    box-shadow: 0 0.5rem 50rem rgba(0, 0, 0, 0.1);
+    z-index: 1000; /* Asegurar que el encabezado esté por encima de otros elementos */
+    display: flex;/* Usar flexbox para organizar elementos */
+    align-items: center; /* Alinear verticalmente los elementos */
+    justify-content: space-between; /* Distribuir espacio entre elementos */
+    background: var(--bg-color); /* Color de fondo */
+    padding: 18px 100px; /* Espaciado interno */
+    box-shadow: 0 0.5rem 50rem rgba(0, 0, 0, 0.1); /* Sombra en la parte inferior */
 }
 .logo{
-    font-size: 1.2rem;
-    font-weight: 600;
-    color: var(--main-color);
+    font-size: 1.2rem;  /* Tamaño de fuente del logo */
+    font-weight: 600;   /* Grosor del texto */
+    color: var(--main-color);  /* Color principal del logo */
 }
-.navbar{
-    display: flex;
+.navbar{ /* Estilos de la barra de navegación */
+    display: flex; /* Usar flexbox para organizar elementos en fila */
 }
-.navbar a{
-    font-size: 1rem;
-    padding: 10px 20px;
+.navbar a{/* Estilos de los enlaces de la barra de navegación */
+    font-size: 1rem; /* Tamaño de fuente de los enlaces */
+    padding: 10px 20px; /* Espaciado interno */
     color: var(--text-color);
     font-weight: 500;
+} 
+/* Cambiar color del enlace al pasar el mouse */
+.navbar a:hover{ 
+    color: var(--main-color);  /* Color del enlace en hover */
 }
-.navbar a:hover{
-    color: var(--main-color);
-}
-#menu-icon{
+#menu-icon{ /* Icono del menú móvil (oculto por defecto) */
     font-size: 2rem;
-    cursor: pointer;
-    display: none;
+    cursor: pointer; /* Hacer el icono interactivo */
+    display: none; /* Ocultar en pantallas grandes */
 }
-.home{
+.home{ /* Sección de inicio */
     width: 100%;
    min-height: 100vh;
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    align-items: center;
-    gap: 1.5rem;
+    display: grid; /* Usar grid para organizar elementos */
+    grid-template-columns: repeat(2, 1fr); /* Dividir en dos columnas iguales */
+    align-items: center; /* Alinear elementos verticalmente */
+    gap: 1.5rem;  /* Espaciado entre elementos */
    }
 .home-img img{
     width: 100%;
@@ -100,238 +103,244 @@ header{
     margin: 1rem 01rem;
 }
 .btn{
-    display: inline-block;
+    display: inline-block; /* Mostrar como elemento en línea con comportamiento de bloque */
     background: var(--main-color);
     padding: 10px 20px;
-    border-radius: 0.5rem;
+    border-radius: 0.5rem; /* Bordes redondeados */
     color: #fff;    
 }
-.btn.hover{
+.btn.hover{ /* Cambio de color en el botón al pasar el mouse */
     background: #ffa400;
 }
-.about{
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 1.5rem;
-    align-items: center;    
+.about{  
+    display: grid; /* Usa un layout de cuadrícula */
+    grid-template-columns: repeat(2, 1fr); /* Divide el contenedor en dos columnas de igual tamaño */
+    gap: 1.5rem; /* Espacio entre las columnas */
+    align-items: center;  /* Alinea los elementos verticalmente en el centro */
 }
 .about-img img{
-    max-width: 80%;
-    border-radius: 0.5rem;
+    max-width: 80%; /* Limita el ancho máximo de la imagen al 80% del contenedor */
+    border-radius: 0.5rem; /* Aplica bordes redondeados */
 }
 .about-text span{
     color: var(--main-color);
-    font-weight: 500;
+    font-weight: 500;  /* Ajusta el grosor del texto */
 }
 .about-text h2{
-    font-size: var(--h2-font);
+    font-size: var(--h2-font);/* Usa la variable de tamaño de fuente h2 */
 }
 .about-text p{
-    margin: 0.8rem 0 1.8rem;
+    margin: 0.8rem 0 1.8rem; /* Agrega márgenes superior e inferior al párrafo */
 }
 .heading{
-    text-align: center;
+    text-align: center; /* Centra el texto del encabezado */
 }
 .heading span{
     color: var(--main-color);
     font-weight: 500;
 }
 .heading h2{
-    font-size: var(--h2-font);
-}
+    font-size: var(--h2-font);  /* Aplica el tamaño de fuente definido para h2 */
+} 
 .menu-container{
- display: grid;
- grid-template-columns: repeat(auto-fit, minmax(220px, auto));
- gap: 1.5rem;
- align-items: center;
+ display: grid; /* Usa un diseño de cuadrícula */
+ grid-template-columns: repeat(auto-fit, minmax(220px, auto));  /* Ajusta las columnas dinámicamente */
+ gap: 1.5rem; /* Espaciado entre elementos */
+ align-items: center; /* Alinea los elementos en el centro */
 }
 .box{
-    position: relative;
-    margin-top: 2rem;
-    height: auto;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    border-radius: 0.5rem;
-    box-shadow: 0 2px 4px rgb(4 64 54 / 10%);
-    padding: 10px;
+    position: relative; /* Posiciona los elementos de forma relativa */
+    margin-top: 2rem;   /* Margen superior */
+    height: auto; /* Altura automática */
+    display: flex; /* Usa un layout flexible */
+    flex-direction: column; /* Apila los elementos en columna */
+    justify-content: center; /* Centra los elementos verticalmente */
+    align-items: center; /* Centra los elementos horizontalmente */
+    border-radius: 0.5rem; /* Bordes redondeados */  
+    box-shadow: 0 2px 4px rgb(4 64 54 / 10%); /* Agrega una sombra sutil */
+    padding: 10px; /* Espaciado interno */
 }
 .box-img{
-    width: 50px;
-    height: 50px;
+    width: 50px; /* Ancho fijo de la imagen */
+    height: 50px;/* altura la imagen */
 }
 .box-img{
-    width: 50%;
-    height: 50%;
-    object-fit: contain;
-    object-position: center;
+    width: 50%; /* Ajusta la imagen al 50% del contenedor */
+    height: 50%; /* Mantiene la proporción de la imagen */
+    object-fit: contain; /* Asegura que la imagen se ajuste dentro del contenedor sin recortarse */
+    object-position: center; /* Centra la imagen dentro del contenedor */
 }
 .box h2{
-    font-size: 1.2rem;
+    font-size: 1.2rem; /* Ajusta el tamaño del título h2 */
 }
 .box h3{
-    font-size: 1rem;
-    font-weight: 400;
-    margin: 4px 0 10px;
+    font-size: 1rem; /* Ajusta el tamaño del título h3 */
+    font-weight: 400;  /* Ajusta el grosor del texto */
+    margin: 4px 0 10px; /* Margen superior e inferior */
 }
 .box span{
-    font-size: var(--p-font);
-    font-weight: 500;
+    font-size: var(--p-font);  /* Usa el tamaño de fuente de párrafo definido en :root */
+    font-weight: 500;  /* Ajusta el grosor del texto */
 }
 .box .bx{
-    position: absolute;
-    right: 0;
-    top: 0;
-    font-size: 20px;
-    background: var(--main-color);
-    border-radius: 0 0.5rem 0 0.5rem;
-    padding: 5px 8px;
-}
+    position: absolute; /* Posiciona el icono de forma absoluta */
+    right: 0; /* Lo coloca en la esquina derecha */
+    top: 0; /* Lo coloca en la esquina superior */
+    font-size: 20px;  /* Tamaño del icono */
+    background: var(--main-color); /* Usa el color principal */
+    border-radius: 0 0.5rem 0 0.5rem; /* Bordes redondeados en la parte superior derecha */
+    padding: 5px 8px;   /* Espaciado interno */
+} 
     .box .bx:hover{
-      background: #ffa400;
+      background: #ffa400;  /* Cambia el color al pasar el mouse */
     }
 .servives-container{
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(240px, auto));
-    gap: 1.5rem;
-    margin-top: 2rem;
+    grid-template-columns: repeat(auto-fit, minmax(240px, auto)); /* Ajusta las columnas automáticamente */
+    gap: 1.5rem;  /* Espaciado entre elementos */
+    margin-top: 2rem; /* Margen superior */
 }
 .s-box{
-    text-align: center;
+    text-align: center; /* Centra el contenido */
 }
 .s-box img{
-    width: 60px;
+    width: 60px; /* Tamaño fijo de la imagen */
 }
 .s-box h3{
-    margin: 4px 0 10px;
+    margin: 4px 0 10px; /* Margen superior e inferior */
 }
 .connect{
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
+    display: flex;  /* Usa un diseño flexible */
+    align-items: center; /* Alinea los elementos verticalmente */
+    justify-content: space-around;  /* Distribuye los elementos uniformemente */
 }
 .connect-text span{
-    color: var(--main-color)
-    font-weight 500;
+    color: var(--main-color) /* Usa el color principal */
+    font-weight 500; /* Ajusta el grosor del texto */
 }
 .connect-text h2{
-    font-size: var(--h2-font);
+    font-size: var(--h2-font); /* Usa el tamaño de fuente h2 */
 }
 .contact{
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, auto));
-    gap: 1.5rem;
+    display: grid; /* Usa un diseño de cuadrícula */
+    grid-template-columns: repeat(auto-fit, minmax(200px, auto)); /* Ajusta dinámicamente el número de columnas */
+    gap: 1.5rem;  /* Espaciado entre elementos */
 
 }
 .contact-box h3{
-    margin-bottom: 1rem;
+    margin-bottom: 1rem; /* Margen inferior */
 }
 .social{
-    display: flex;
-    margin-top: 1.5rem;
+    display: flex; /* Usa un diseño flexible */
+    margin-top: 1.5rem; /* Margen superior */
 }
 .social i{
-    font-size: 20px;
-    margin-right: 1rem;
-    color: var(--text-color);
+    font-size: 20px; /* Tamaño de los iconos */
+    margin-right: 1rem; /* Margen derecho entre iconos */
+    color: var(--text-color); /* Usa el color de texto definido */
 }
 .social i:hover{
-    color: var(--main-color);
+    color: var(--main-color); /* Cambia el color al pasar el mouse */
 }
 .contact-box li a{
-    color: var(--text-color);
+    color: var(--text-color); /* Usa el color de texto */
 }
 .contact-box li a:hover{
-    color: var(--main-color);
+    color: var(--main-color); /* Cambia el color al pasar el mouse */
 }
 .address{
-    display: flex;
-    flex-direction: column;
+    display: flex; /* Usa un diseño flexible */
+    flex-direction: column; /* Apila los elementos en columna */
 }
 .address i{
-    margin-bottom: 0.5rem;
-    font-size: 1rem;
+    margin-bottom: 0.5rem;  /* Margen inferior */
+    font-size: 1rem; /* Tamaño del icono */
 }
 .address span{
-    margin-left:1rem ;
+    margin-left:1rem ; /* Margen izquierdo */
 }
 .copyright{
-    padding: 20px;
-    text-align: center;
+    padding: 20px; /* Espaciado interno */
+    text-align: center; /* Centra el texto */
 }
-@media (max-width:921px){
+/* Media queries para hacer el diseño responsive */
+@media (max-width:921px){ 
     header{
-        padding: 14px 41px;
+        padding: 14px 41px; /* Reduce el padding del header */
     }
     :root{
-    --big-font:3rem ;
---h2-font: 1.7rem;
+    --big-font:3rem ; /* Reduce el tamaño de la fuente grande */
+--h2-font: 1.7rem; /* Reduce el tamaño de los títulos h2 */
     }
 }
 @media (max-width:768px){
-    section{
-        padding: 50px 8%;
+    section{ 
+        padding: 50px 8%; /* Reduce el espaciado de las secciones */
     }
     #menu-icon{
-        display: initial;
-        color: var(--text-color); 
+        display: initial; /* Muestra el ícono del menú */
+        color: var(--text-color);  /* Usa el color de texto */
     }
     header .navbar{
-        position: absolute;
-        top: -400px;
-        left: 0;
-        right: 0;
-        display: flex;
-        text-align: center;
-        background: var(--bg-color);
-        box-shadow: 0 4px 4px rgb(0 0 0 / 10%);
-        transition: 0.2s ease;
+        position: absolute; /* Posiciona la barra de navegación de forma absoluta */
+        top: -400px; /* La mueve fuera de la pantalla para ocultarla inicialmente */
+        left: 0; /* La alinea con el borde izquierdo */
+        right: 0; /* La extiende hasta el borde derecho */
+        display: flex; /* Usa un diseño flexible para organizar los elementos */
+        text-align: center; /* Centra el texto dentro de la barra de navegación */
+        background: var(--bg-color); /* Aplica el color de fondo definido en las variables */
+        box-shadow: 0 4px 4px rgb(0 0 0 / 10%); /* Agrega una sombra sutil */
+        transition: 0.2s ease; /* Suaviza el cambio de posición */
     }
     .navbar.active{
-        top: 100%
+        top: 100% /* Muestra la barra de navegación cuando está activa */
     }
     .navbar a{
-        padding: 1.5rem;
-        display: block;
-        background: var(--bg-color);
+        padding: 1.5rem; /* Agrega espaciado interno */
+        display: block;  /* Convierte los enlaces en elementos de bloque */
+        background: var(--bg-color); /* Mantiene el fondo de la barra de navegación */
     }
     #darkmode{
-        position: absolute;
-        top: 1.4rem;
-        right: 2rem;
+        position: absolute; /* Posiciona el botón de modo oscuro de forma absoluta */
+        top: 1.4rem; /* Lo ubica a 1.4rem desde la parte superior */
+        right: 2rem; /* Lo ubica a 2rem desde el borde derecho */
+    
     }
 }
+ /* Media query para pantallas de hasta 715px */
+
 @media (max-width:715px){
     header{
-        padding: 10px 16px;
+        padding: 10px 16px; /* Reduce el espaciado del header */
+    
     }
     .home{
-        grid-template-columns: 1fr;
+        grid-template-columns: 1fr; /* Cambia la disposición de la cuadrícula a una sola columna */
     }
     .about{
-        grid-template-columns: 1fr;
-        text-align: center;
+        grid-template-columns: 1fr; /* Cambia la sección "about" a una sola columna */
+        text-align: center; /* Centra el contenido */
 
     }
     .about-img{
-        order: 2;
+        order: 2; /* Cambia el orden de la imagen para que aparezca después del texto */
     }
 }
+ /* Media query para pantallas de hasta 515px */
 @media (max-width:515px){
     .connect{
-        flex-direction: column;
+        flex-direction: column; /* Cambia la dirección de los elementos a columna */
     }
     .connect .btn{
-        margin-top: 1rem;
+        margin-top: 1rem; /* Agrega un margen superior al botón */
     }
 }
 @media(max-width:450px){
     :root{
-        --big-font: 2rem;
+        --big-font: 2rem;/* Reducir tamaño de fuente */
         --h2-font: 1.4rem;
     }
     .home-text{
-        padding-top: 4rem;
+        padding-top: 4rem;  /* Ajustar el espaciado superior */
     }
 }

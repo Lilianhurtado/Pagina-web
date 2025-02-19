@@ -1,24 +1,26 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Responsive Burger Website</title>
+    <meta charset="UTF-8"><!-- Define la codificación de caracteres -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"> <!-- Compatibilidad con versiones antiguas de IE -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"><!-- Hace que la página sea responsive -->
+    <title>Responsive Burger Website</title><!-- Título de la pestaña del navegador -->
     <!--Box Icons -->
     <link rel="stylesheet"
   href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
-  <!--Link To CSS-->
+  
+    <!-- Enlace a la hoja de estilos externa -->
   <link rel="stylesheet" href="style.css">
 
 </head>
 <body>
+    <!-- Barra de navegación -->
     <!-- navbar -->
      <header> 
-        <a href="#" class="logo">Taste</a>
-        <div class="bx bx-menu" id="menu-icon"></div>
+        <a href="#" class="logo">Taste</a><!-- Logo del sitio -->
+        <div class="bx bx-menu" id="menu-icon"></div><!-- Ícono del menú para dispositivos móviles -->
 
-        <u1 class="navbar">
+        <u1 class="navbar"><!-- Lista de navegación -->
             <li><a href="#home">Home</a></li>
             <li><a href="#about">About</a></li>
             <li><a href="#menu">Menu</a></li>
@@ -30,12 +32,12 @@
      </header>
      <!-- Home Section-->
       <section class="home" id="home">
-        <div class="home-txt">
+        <div class="home-txt"><!-- Contenedor de texto -->
             <h1>Food Taste </h1>
             <h2>The tasty food of <br> your choice</h2>
             <a href="#" class="btn">View Menu</a>
         </div>
-       <div class="home-img">
+       <div class="home-img"><!-- Contenedor de imagen -->
         <img src="images/home.jpg" alt="">
        </div>
        
@@ -43,10 +45,10 @@
 
       <!-- About -->
        <section class="about" id="about">
-        <div class="about-img">
+        <div class="about-img"><!-- Contenedor de imagen -->
             <img src="images/about.jpg" alt="">
         </div>
-        <div class="about-text">
+        <div class="about-text"> <!-- Contenedor de texto -->
             <span>About Us</span>
             <h2>we make good and <br> tasty food</h2>
             <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Iure iste ipsa officiis obcaecati molestiae iusto. Nulla qui atque aut provident similique ab et praesentium veniam. Nemo velit fugiat officia asperiores.</p>
@@ -56,14 +58,15 @@
        </section>
        <!-- Menu -->
         <section class="menu" id="menu">
-        <div class="heading">
+        <div class="heading"><!-- Contenedor de título -->
             <span>Menu</span>
             <h2>Tasty Menu of the week</h2>
         </div>
-        <div class="menu-container">
-            <!-- Box 1-->
+        <div class="menu-container"><!-- Contenedor principal del menú -->
+             <!-- Elementos del menú -->
+            <!-- Box 1--><!-- Contenedor de una parte del menú -->
             <div class="box">
-                <div class="box-img">
+                <div class="box-img"> <!-- Contenedor de imagen -->
                     <img src="images/menu1.jpg" alt="">
                 </div>
                <h2>Cheese Burger</h2>
@@ -73,7 +76,7 @@
 
             </div>
             <!-- Box 2 -->
-            <div class="box">
+            <div class="box"><!-- Contenedor de una parte del menú -->
                 <div class="box-img">
                     <img src="images/menu2.jpg" alt="">
                 </div>
@@ -83,7 +86,7 @@
                <i class= 'bx bx-cart-alt'></i>
          </div>
          <!-- Box 3 -->
-         <div class="box">
+         <div class="box"><!-- Contenedor de otra parte del menú -->
             <div class="box-img">
                 <img src="images/menu3.jpg" alt="">
             </div>
@@ -95,29 +98,28 @@
 
         </div>
  </section>
-
- <!-- Service-->
+<!-- Sección Servicios -->
  <section class="services" id="services">
-    <div class="heading">
+    <div class="heading"><!-- Contenedor de título -->
     <span>Services</span>
     <h2>We provide best food services</h2>
 </div>
 
-     <div class="servives-container">
+     <div class="servives-container"><!-- Contenedor de los servicios -->
         <!--Box 1-->
-     <div class="s-box">
+     <div class="s-box"><!-- Contenedor de un servicio -->
         <img src="images/order.jpg" alt="">
         <h3>Your Order</h3>
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam qui dolores exercitationem recusandae. Ex veritatis repellat tempore impedit voluptatibus quod. Illo hic, delectus doloribus voluptatum in officiis harum aliquid et!</p>
     </div>
     <!--Box 2-->
-    <div class="s-box">
+    <div class="s-box"><!-- Contenedor de otro  servicio -->
         <img src="images/delivey-truck.jpg" alt="">
         <h3>shipping</h3>
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam qui dolores exercitationem recusandae. Ex veritatis repellat tempore impedit voluptatibus quod. Illo hic, delectus doloribus voluptatum in officiis harum aliquid et!</p>
     </div>
     <!-- Box 3-->
-    <div class="s-box">
+    <div class="s-box"><!-- Contenedor de otro  servicio -->
         <img src="images/shipping.png" alt="">
         <h3>Delivered</h3>
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam qui dolores exercitationem recusandae. Ex veritatis repellat tempore impedit voluptatibus quod. Illo hic, delectus doloribus voluptatum in officiis harum aliquid et!</p>
@@ -131,14 +133,17 @@
         <span>Let's Talk</span>
         <h2>Connect now</h2>
     </div>
-    <a href="#" class="btn">Contact Us</a>
+    <!-- Botón de contacto que redirige a otra sección o acción -->
+     <a href="#" class="btn">Contact Us</a>
 </section>
-<!-- Contact-->
+<!-- Sección Contacto -->
  <section class="contact" id="contact">
+    <!-- Caja de contacto con información de redes sociales -->
     <div class="contact-box">
         <h3>Food Taste</h3>
         <span>Connect With Us</span>
         <div class="social">
+            <!-- Enlaces a redes sociales (Facebook, Twitter, Instagram) -->
             <a href="#"><i class='bx bxl-facebook' ></i></a>
             <a href="#"><i class='bx bxl-twitter' ></i></a>
             <a href="#"><i class='bx bxl-instagram' ></i></a>
@@ -146,6 +151,7 @@
     </div>
     <div class="contact-box">
         <h3>Menu Links</h3>
+        <!-- Enlaces a diferentes secciones del sitio -->
         <li><a href="#home">Home</a></li>
             <li><a href="#about">About</a></li>
             <li><a href="#menu">Menu</a></li>
@@ -153,6 +159,7 @@
             <li><a href="#contact">Contact</a></li>
      </div>
      <div class="contact-box">
+        <!-- Caja de enlaces rápidos -->
         <h3>Quick Links</h3>
         <li><a href="#Contact">Contact</a></li>
             <li><a href="#Privacy Policy">Privacy Policy</a></li>
@@ -160,6 +167,7 @@
             <li><a href="#Terms of Use">Terms Of use</a></li>
      </div>
      <div class="contact-box address">
+        <!--informacion del sitio-->
         <h3>Contact</h3>
         <i class='bx bxs-map'><span>44 Steet New York, USA</span></i>
         <i class='bx bxs-phone'><span>+1 444 444 4444</span></i>
@@ -168,14 +176,14 @@
  </section>
 
  <!-- Copyright-->
-<div class="Copyright">
+<div class="Copyright"><!-- Contenedor del pie de página -->
     <p>&#169; carpoolVenom All Right Reserved.</p>
 </div>
 
    
 <!-- Scroll Reveal-->
 <script src="https://unpkg.com/scrollreveal"></script>
-<!-- Link To JavaScript-->
+<!-- Enlace a JavaScript externo -->
      <script src="Script.js"></script>
 </body>
 </html>
